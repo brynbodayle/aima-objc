@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		609BADBC164020AC00229E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BADBB164020AC00229E96 /* Foundation.framework */; };
-		609BADC1164020AC00229E96 /* aima_objc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 609BADC0164020AC00229E96 /* aima_objc.h */; };
-		609BADC3164020AC00229E96 /* aima_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 609BADC2164020AC00229E96 /* aima_objc.m */; };
+		60F9A4391642EB770017C963 /* AISearchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F9A4381642EB770017C963 /* AISearchState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +18,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				609BADC1164020AC00229E96 /* aima_objc.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +27,8 @@
 		609BADB8164020AC00229E96 /* libaima-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaima-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		609BADBB164020AC00229E96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		609BADBF164020AC00229E96 /* aima-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aima-objc-Prefix.pch"; sourceTree = "<group>"; };
-		609BADC0164020AC00229E96 /* aima_objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aima_objc.h; sourceTree = "<group>"; };
-		609BADC2164020AC00229E96 /* aima_objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aima_objc.m; sourceTree = "<group>"; };
+		60F9A4371642EB770017C963 /* AISearchState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchState.h; sourceTree = "<group>"; };
+		60F9A4381642EB770017C963 /* AISearchState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +71,7 @@
 		609BADBD164020AC00229E96 /* aima-objc */ = {
 			isa = PBXGroup;
 			children = (
-				609BADC0164020AC00229E96 /* aima_objc.h */,
-				609BADC2164020AC00229E96 /* aima_objc.m */,
+				60F9A43B1642EB800017C963 /* Search */,
 				609BADBE164020AC00229E96 /* Supporting Files */,
 			);
 			path = "aima-objc";
@@ -86,6 +83,15 @@
 				609BADBF164020AC00229E96 /* aima-objc-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60F9A43B1642EB800017C963 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				60F9A4371642EB770017C963 /* AISearchState.h */,
+				60F9A4381642EB770017C963 /* AISearchState.m */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				609BADC3164020AC00229E96 /* aima_objc.m in Sources */,
+				60F9A4391642EB770017C963 /* AISearchState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +242,7 @@
 				609BADC8164020AC00229E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
