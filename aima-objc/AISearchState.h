@@ -13,7 +13,6 @@
 //initializer, this is used like a constructor
 -(id)initWithString:(NSString *)stateString;
 
-
 //replace toString and prettyPrint
 -(NSString *)description;
 -(NSString *)formattedDescription;
@@ -22,6 +21,6 @@
 
 -(BOOL)isEqual:(id)object;
 
--(NSComparisonResult)compareTo:(AISearchState *)object;
+-(NSComparisonResult)compareTo:(AISearchState *)state;
 
 @end

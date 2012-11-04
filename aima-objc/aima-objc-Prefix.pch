@@ -5,4 +5,7 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import "AISearchState.h"
+    #import "AISearchProblem.h"
+    #import "AISearchAction.h"
+    #import "AISearchSolver.h"
 #endif

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603A53E81646C47000F71B58 /* AISearchProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53E71646C47000F71B58 /* AISearchProblem.m */; };
+		603A53EC1646C64200F71B58 /* AISearchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53EB1646C64200F71B58 /* AISearchAction.m */; };
+		603A53EF1646C80900F71B58 /* AISearchSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53EE1646C80900F71B58 /* AISearchSolver.m */; };
+		603A53F31646CC0A00F71B58 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53F21646CC0A00F71B58 /* Stack.m */; };
 		609BADBC164020AC00229E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BADBB164020AC00229E96 /* Foundation.framework */; };
 		60F9A4391642EB770017C963 /* AISearchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F9A4381642EB770017C963 /* AISearchState.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +28,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		603A53E61646C47000F71B58 /* AISearchProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchProblem.h; sourceTree = "<group>"; };
+		603A53E71646C47000F71B58 /* AISearchProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchProblem.m; sourceTree = "<group>"; };
+		603A53EA1646C64200F71B58 /* AISearchAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchAction.h; sourceTree = "<group>"; };
+		603A53EB1646C64200F71B58 /* AISearchAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchAction.m; sourceTree = "<group>"; };
+		603A53ED1646C80900F71B58 /* AISearchSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchSolver.h; sourceTree = "<group>"; };
+		603A53EE1646C80900F71B58 /* AISearchSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchSolver.m; sourceTree = "<group>"; };
+		603A53F11646CC0A00F71B58 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		603A53F21646CC0A00F71B58 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		609BADB8164020AC00229E96 /* libaima-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaima-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		609BADBB164020AC00229E96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		609BADBF164020AC00229E96 /* aima-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aima-objc-Prefix.pch"; sourceTree = "<group>"; };
@@ -43,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		603A53F01646CBFD00F71B58 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				603A53F11646CC0A00F71B58 /* Stack.h */,
+				603A53F21646CC0A00F71B58 /* Stack.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		609BADAD164020AC00229E96 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +92,7 @@
 		609BADBD164020AC00229E96 /* aima-objc */ = {
 			isa = PBXGroup;
 			children = (
+				603A53F01646CBFD00F71B58 /* Utility */,
 				60F9A43B1642EB800017C963 /* Search */,
 				609BADBE164020AC00229E96 /* Supporting Files */,
 			);
@@ -90,6 +112,12 @@
 			children = (
 				60F9A4371642EB770017C963 /* AISearchState.h */,
 				60F9A4381642EB770017C963 /* AISearchState.m */,
+				603A53E61646C47000F71B58 /* AISearchProblem.h */,
+				603A53E71646C47000F71B58 /* AISearchProblem.m */,
+				603A53EA1646C64200F71B58 /* AISearchAction.h */,
+				603A53EB1646C64200F71B58 /* AISearchAction.m */,
+				603A53ED1646C80900F71B58 /* AISearchSolver.h */,
+				603A53EE1646C80900F71B58 /* AISearchSolver.m */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -146,6 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F9A4391642EB770017C963 /* AISearchState.m in Sources */,
+				603A53E81646C47000F71B58 /* AISearchProblem.m in Sources */,
+				603A53EC1646C64200F71B58 /* AISearchAction.m in Sources */,
+				603A53EF1646C80900F71B58 /* AISearchSolver.m in Sources */,
+				603A53F31646CC0A00F71B58 /* Stack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
