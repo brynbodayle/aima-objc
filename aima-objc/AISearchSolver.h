@@ -8,17 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-//this is temporary until we define these classes
-@class AISearchStrategy;
-@class AINode;
-//end temp
+@class AIStrategy;
 
 @interface AISearchSolver : NSObject
 
 //the plus denotes a static or "class" method
 +(BOOL)test:(AISearchProblem *)problem name:(NSString *)name;
 
-+(BOOL)test:(AISearchProblem *)problem strategy:(AISearchStrategy *)strategy;
++(BOOL)test:(AISearchProblem *)problem strategy:(AIStrategy *)strategy;
 
 
 @end

@@ -16,6 +16,9 @@
 
 @implementation Stack
 
+-(id)stack {
+    return [[Stack alloc] init];
+}
 
 - (id)init {
     if (self = [super init]) {

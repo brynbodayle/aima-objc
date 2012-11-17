@@ -10,6 +10,7 @@
 
 @interface Stack : NSObject
 
++(id)stack;
 
 - (void)push:(id)object;
 - (id)pop;

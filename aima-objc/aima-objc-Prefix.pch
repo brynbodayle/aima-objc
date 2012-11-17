@@ -8,4 +8,7 @@
     #import "AISearchProblem.h"
     #import "AISearchAction.h"
     #import "AISearchSolver.h"
+    #import "AIStrategy.h"
+    #import "AINode.h"
+    #import "AISearchQueue.h"
 #endif

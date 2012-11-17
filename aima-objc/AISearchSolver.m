@@ -8,12 +8,14 @@
 
 #import "AISearchSolver.h"
 #import "Stack.h"
+#import "AIStrategy.h"
+#import "AINode.h"
 
 @implementation AISearchSolver
 
 +(BOOL)test:(AISearchProblem *)problem name:(NSString *)name {
     
-    AISearchStrategy *stategy;
+    AIStrategy *stategy = nil;
     
     @try {
         Class strategyClass = NSClassFromString(name);
@@ -27,12 +29,11 @@
     return [AISearchSolver test:problem strategy:stategy];
 }
 
-+(BOOL)test:(AISearchProblem *)problem strategy:(AISearchStrategy *)strategy {
++(BOOL)test:(AISearchProblem *)problem strategy:(AIStrategy *)strategy {
     
     NSLog(@"Start: %@", [problem initial]);
     
-    Stack *solution;
-    // Stack *solution = [strategy search:problem];
+    Stack *solution = [strategy search:problem];
     
     if (solution.count == 0) {
         
@@ -40,11 +41,11 @@
         return false;
     }
     
-    while (solution.count > 0)
-    {
+    while (solution.count > 0) {
+        
         AINode *node = [solution pop];
 //        if(!Node.reporting.isEmpty())
-//             NSLog(@"Search succeeded");
+//             NSLog(@"%@", node);
     }
     
     NSLog(@"Search succeeded");

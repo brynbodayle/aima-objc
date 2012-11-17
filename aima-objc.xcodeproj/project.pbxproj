@@ -11,7 +11,21 @@
 		603A53EC1646C64200F71B58 /* AISearchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53EB1646C64200F71B58 /* AISearchAction.m */; };
 		603A53EF1646C80900F71B58 /* AISearchSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53EE1646C80900F71B58 /* AISearchSolver.m */; };
 		603A53F31646CC0A00F71B58 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53F21646CC0A00F71B58 /* Stack.m */; };
+		605ECB7716581A83006538E9 /* JAPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 605ECB7616581A83006538E9 /* JAPriorityQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		609BADBC164020AC00229E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BADBB164020AC00229E96 /* Foundation.framework */; };
+		60A7608F1648195600086257 /* AIStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A7608E1648195600086257 /* AIStrategy.m */; };
+		60A760931648196200086257 /* AINode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760921648196200086257 /* AINode.m */; };
+		60A760961648196F00086257 /* AStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760951648196F00086257 /* AStar.m */; };
+		60A760991648198500086257 /* AIBreadthFirstSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760981648198500086257 /* AIBreadthFirstSearch.m */; };
+		60A7609C1648199000086257 /* AIDepthLimitedSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A7609B1648199000086257 /* AIDepthLimitedSearch.m */; };
+		60A7609F1648199C00086257 /* AIFlounder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A7609E1648199C00086257 /* AIFlounder.m */; };
+		60A760A5164819BE00086257 /* AIGraphSearchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760A4164819BE00086257 /* AIGraphSearchQueue.m */; };
+		60A760A8164819C600086257 /* AIGreedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760A7164819C600086257 /* AIGreedy.m */; };
+		60A760AE164819F400086257 /* AIIterativeDeepingSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760AD164819F400086257 /* AIIterativeDeepingSearch.m */; };
+		60A760B116481A5300086257 /* AIQueueDepthFirstSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760B016481A5300086257 /* AIQueueDepthFirstSearch.m */; };
+		60A760B416481A6700086257 /* AIR2.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760B316481A6700086257 /* AIR2.m */; };
+		60A760B716481A7400086257 /* AIRecursiveDepthFirstSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760B616481A7400086257 /* AIRecursiveDepthFirstSearch.m */; };
+		60A760BD164824E300086257 /* AISearchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760BC164824E300086257 /* AISearchQueue.m */; };
 		60F9A4391642EB770017C963 /* AISearchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F9A4381642EB770017C963 /* AISearchState.m */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +50,37 @@
 		603A53EE1646C80900F71B58 /* AISearchSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchSolver.m; sourceTree = "<group>"; };
 		603A53F11646CC0A00F71B58 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		603A53F21646CC0A00F71B58 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		605ECB7516581A83006538E9 /* JAPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAPriorityQueue.h; sourceTree = "<group>"; };
+		605ECB7616581A83006538E9 /* JAPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAPriorityQueue.m; sourceTree = "<group>"; };
 		609BADB8164020AC00229E96 /* libaima-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaima-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		609BADBB164020AC00229E96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		609BADBF164020AC00229E96 /* aima-objc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aima-objc-Prefix.pch"; sourceTree = "<group>"; };
+		60A7608D1648195600086257 /* AIStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStrategy.h; sourceTree = "<group>"; };
+		60A7608E1648195600086257 /* AIStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIStrategy.m; sourceTree = "<group>"; };
+		60A760911648196200086257 /* AINode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AINode.h; sourceTree = "<group>"; };
+		60A760921648196200086257 /* AINode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AINode.m; sourceTree = "<group>"; };
+		60A760941648196F00086257 /* AStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStar.h; sourceTree = "<group>"; };
+		60A760951648196F00086257 /* AStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AStar.m; sourceTree = "<group>"; };
+		60A760971648198500086257 /* AIBreadthFirstSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBreadthFirstSearch.h; sourceTree = "<group>"; };
+		60A760981648198500086257 /* AIBreadthFirstSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBreadthFirstSearch.m; sourceTree = "<group>"; };
+		60A7609A1648199000086257 /* AIDepthLimitedSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDepthLimitedSearch.h; sourceTree = "<group>"; };
+		60A7609B1648199000086257 /* AIDepthLimitedSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDepthLimitedSearch.m; sourceTree = "<group>"; };
+		60A7609D1648199C00086257 /* AIFlounder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFlounder.h; sourceTree = "<group>"; };
+		60A7609E1648199C00086257 /* AIFlounder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFlounder.m; sourceTree = "<group>"; };
+		60A760A3164819BE00086257 /* AIGraphSearchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGraphSearchQueue.h; sourceTree = "<group>"; };
+		60A760A4164819BE00086257 /* AIGraphSearchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIGraphSearchQueue.m; sourceTree = "<group>"; };
+		60A760A6164819C600086257 /* AIGreedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGreedy.h; sourceTree = "<group>"; };
+		60A760A7164819C600086257 /* AIGreedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIGreedy.m; sourceTree = "<group>"; };
+		60A760AC164819F400086257 /* AIIterativeDeepingSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIterativeDeepingSearch.h; sourceTree = "<group>"; };
+		60A760AD164819F400086257 /* AIIterativeDeepingSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIIterativeDeepingSearch.m; sourceTree = "<group>"; };
+		60A760AF16481A5300086257 /* AIQueueDepthFirstSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIQueueDepthFirstSearch.h; sourceTree = "<group>"; };
+		60A760B016481A5300086257 /* AIQueueDepthFirstSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIQueueDepthFirstSearch.m; sourceTree = "<group>"; };
+		60A760B216481A6700086257 /* AIR2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIR2.h; sourceTree = "<group>"; };
+		60A760B316481A6700086257 /* AIR2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIR2.m; sourceTree = "<group>"; };
+		60A760B516481A7400086257 /* AIRecursiveDepthFirstSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRecursiveDepthFirstSearch.h; sourceTree = "<group>"; };
+		60A760B616481A7400086257 /* AIRecursiveDepthFirstSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRecursiveDepthFirstSearch.m; sourceTree = "<group>"; };
+		60A760BB164824E300086257 /* AISearchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchQueue.h; sourceTree = "<group>"; };
+		60A760BC164824E300086257 /* AISearchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchQueue.m; sourceTree = "<group>"; };
 		60F9A4371642EB770017C963 /* AISearchState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchState.h; sourceTree = "<group>"; };
 		60F9A4381642EB770017C963 /* AISearchState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,10 +100,45 @@
 		603A53F01646CBFD00F71B58 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				605ECB7516581A83006538E9 /* JAPriorityQueue.h */,
+				605ECB7616581A83006538E9 /* JAPriorityQueue.m */,
 				603A53F11646CC0A00F71B58 /* Stack.h */,
 				603A53F21646CC0A00F71B58 /* Stack.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		604443B51647815300BD3D94 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				60A7608D1648195600086257 /* AIStrategy.h */,
+				60A7608E1648195600086257 /* AIStrategy.m */,
+				60A760941648196F00086257 /* AStar.h */,
+				60A760951648196F00086257 /* AStar.m */,
+				60A760971648198500086257 /* AIBreadthFirstSearch.h */,
+				60A760981648198500086257 /* AIBreadthFirstSearch.m */,
+				60A7609A1648199000086257 /* AIDepthLimitedSearch.h */,
+				60A7609B1648199000086257 /* AIDepthLimitedSearch.m */,
+				60A7609D1648199C00086257 /* AIFlounder.h */,
+				60A7609E1648199C00086257 /* AIFlounder.m */,
+				60A760A3164819BE00086257 /* AIGraphSearchQueue.h */,
+				60A760A4164819BE00086257 /* AIGraphSearchQueue.m */,
+				60A760A6164819C600086257 /* AIGreedy.h */,
+				60A760A7164819C600086257 /* AIGreedy.m */,
+				60A760911648196200086257 /* AINode.h */,
+				60A760921648196200086257 /* AINode.m */,
+				60A760AC164819F400086257 /* AIIterativeDeepingSearch.h */,
+				60A760AD164819F400086257 /* AIIterativeDeepingSearch.m */,
+				60A760AF16481A5300086257 /* AIQueueDepthFirstSearch.h */,
+				60A760B016481A5300086257 /* AIQueueDepthFirstSearch.m */,
+				60A760B216481A6700086257 /* AIR2.h */,
+				60A760B316481A6700086257 /* AIR2.m */,
+				60A760B516481A7400086257 /* AIRecursiveDepthFirstSearch.h */,
+				60A760B616481A7400086257 /* AIRecursiveDepthFirstSearch.m */,
+				60A760BB164824E300086257 /* AISearchQueue.h */,
+				60A760BC164824E300086257 /* AISearchQueue.m */,
+			);
+			name = Strategies;
 			sourceTree = "<group>";
 		};
 		609BADAD164020AC00229E96 = {
@@ -93,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				603A53F01646CBFD00F71B58 /* Utility */,
+				604443B51647815300BD3D94 /* Strategies */,
 				60F9A43B1642EB800017C963 /* Search */,
 				609BADBE164020AC00229E96 /* Supporting Files */,
 			);
@@ -178,6 +256,20 @@
 				603A53EC1646C64200F71B58 /* AISearchAction.m in Sources */,
 				603A53EF1646C80900F71B58 /* AISearchSolver.m in Sources */,
 				603A53F31646CC0A00F71B58 /* Stack.m in Sources */,
+				60A7608F1648195600086257 /* AIStrategy.m in Sources */,
+				60A760931648196200086257 /* AINode.m in Sources */,
+				60A760961648196F00086257 /* AStar.m in Sources */,
+				60A760991648198500086257 /* AIBreadthFirstSearch.m in Sources */,
+				60A7609C1648199000086257 /* AIDepthLimitedSearch.m in Sources */,
+				60A7609F1648199C00086257 /* AIFlounder.m in Sources */,
+				60A760A5164819BE00086257 /* AIGraphSearchQueue.m in Sources */,
+				60A760A8164819C600086257 /* AIGreedy.m in Sources */,
+				60A760AE164819F400086257 /* AIIterativeDeepingSearch.m in Sources */,
+				60A760B116481A5300086257 /* AIQueueDepthFirstSearch.m in Sources */,
+				60A760B416481A6700086257 /* AIR2.m in Sources */,
+				60A760B716481A7400086257 /* AIRecursiveDepthFirstSearch.m in Sources */,
+				60A760BD164824E300086257 /* AISearchQueue.m in Sources */,
+				605ECB7716581A83006538E9 /* JAPriorityQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
