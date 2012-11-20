@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AIR2 : NSObject
+@interface AIR2 : AIStrategy
+
+-(Stack *)search:(AISearchProblem *)problem root:(AINode *)root;
 
 @end

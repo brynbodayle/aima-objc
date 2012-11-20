@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AIQueueDepthFirstSearch : NSObject
+@interface AIQueueDepthFirstSearch : AIStrategy
+
+-(id)initWithSearchQueue:(AISearchQueue *)searchQueue;
 
 @end

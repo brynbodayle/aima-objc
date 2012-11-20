@@ -10,4 +10,21 @@
 
 @implementation AIIterativeDeepingSearch
 
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+       
+        //Log.record("Strategy: Iterative Deepening Depth-First Search");
+        
+    }
+    return self;
+}
+
+-(Stack *)search:(AISearchProblem *)problem {
+    
+    return nil;
+}
+
 @end

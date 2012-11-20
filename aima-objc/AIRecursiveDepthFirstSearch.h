@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AIRecursiveDepthFirstSearch : NSObject
+@interface AIRecursiveDepthFirstSearch : AIStrategy
+
+-(Stack *)search:(AISearchProblem *)problem root:(AINode *)root;
 
 @end

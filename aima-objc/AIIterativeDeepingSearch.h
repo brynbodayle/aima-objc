@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AIIterativeDeepingSearch : NSObject
+@interface AIIterativeDeepingSearch : AIStrategy
 
 @end
