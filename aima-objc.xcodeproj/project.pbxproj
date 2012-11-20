@@ -26,8 +26,25 @@
 		60A760B416481A6700086257 /* AIR2.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760B316481A6700086257 /* AIR2.m */; };
 		60A760B716481A7400086257 /* AIRecursiveDepthFirstSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760B616481A7400086257 /* AIRecursiveDepthFirstSearch.m */; };
 		60A760BD164824E300086257 /* AISearchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A760BC164824E300086257 /* AISearchQueue.m */; };
+		60CD80D0165BF55000D197C2 /* AIUniformCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80CF165BF55000D197C2 /* AIUniformCost.m */; };
+		60CD80D3165BF56100D197C2 /* AITreeSearchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80D2165BF56000D197C2 /* AITreeSearchQueue.m */; };
+		60CD80DB165BFA8F00D197C2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CD80DA165BFA8F00D197C2 /* SenTestingKit.framework */; };
+		60CD80DD165BFA8F00D197C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CD80DC165BFA8F00D197C2 /* UIKit.framework */; };
+		60CD80DE165BFA8F00D197C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BADBB164020AC00229E96 /* Foundation.framework */; };
+		60CD80E4165BFA8F00D197C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60CD80E2165BFA8F00D197C2 /* InfoPlist.strings */; };
+		60CD80E7165BFA8F00D197C2 /* AITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80E6165BFA8F00D197C2 /* AITests.m */; };
 		60F9A4391642EB770017C963 /* AISearchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F9A4381642EB770017C963 /* AISearchState.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60CD80EC165BFADE00D197C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 609BADAF164020AC00229E96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609BADB7164020AC00229E96;
+			remoteInfo = "aima-objc";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		609BADB6164020AC00229E96 /* CopyFiles */ = {
@@ -81,6 +98,18 @@
 		60A760B616481A7400086257 /* AIRecursiveDepthFirstSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRecursiveDepthFirstSearch.m; sourceTree = "<group>"; };
 		60A760BB164824E300086257 /* AISearchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchQueue.h; sourceTree = "<group>"; };
 		60A760BC164824E300086257 /* AISearchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchQueue.m; sourceTree = "<group>"; };
+		60CD80CE165BF54F00D197C2 /* AIUniformCost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUniformCost.h; sourceTree = "<group>"; };
+		60CD80CF165BF55000D197C2 /* AIUniformCost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUniformCost.m; sourceTree = "<group>"; };
+		60CD80D1165BF56000D197C2 /* AITreeSearchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITreeSearchQueue.h; sourceTree = "<group>"; };
+		60CD80D2165BF56000D197C2 /* AITreeSearchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AITreeSearchQueue.m; sourceTree = "<group>"; };
+		60CD80D9165BFA8F00D197C2 /* AITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AITests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60CD80DA165BFA8F00D197C2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		60CD80DC165BFA8F00D197C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		60CD80E1165BFA8F00D197C2 /* AITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AITests-Info.plist"; sourceTree = "<group>"; };
+		60CD80E3165BFA8F00D197C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60CD80E5165BFA8F00D197C2 /* AITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITests.h; sourceTree = "<group>"; };
+		60CD80E6165BFA8F00D197C2 /* AITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITests.m; sourceTree = "<group>"; };
+		60CD80E8165BFA8F00D197C2 /* AITests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AITests-Prefix.pch"; sourceTree = "<group>"; };
 		60F9A4371642EB770017C963 /* AISearchState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchState.h; sourceTree = "<group>"; };
 		60F9A4381642EB770017C963 /* AISearchState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,16 +123,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60CD80D5165BFA8F00D197C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CD80DB165BFA8F00D197C2 /* SenTestingKit.framework in Frameworks */,
+				60CD80DD165BFA8F00D197C2 /* UIKit.framework in Frameworks */,
+				60CD80DE165BFA8F00D197C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		603A53F01646CBFD00F71B58 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				605ECB7516581A83006538E9 /* JAPriorityQueue.h */,
-				605ECB7616581A83006538E9 /* JAPriorityQueue.m */,
-				603A53F11646CC0A00F71B58 /* Stack.h */,
-				603A53F21646CC0A00F71B58 /* Stack.m */,
+				60CD80C7165BF47300D197C2 /* Measurement */,
+				60CD80C5165BF46700D197C2 /* Data Structures */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -111,10 +148,6 @@
 		604443B51647815300BD3D94 /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
-				60A7608D1648195600086257 /* AIStrategy.h */,
-				60A7608E1648195600086257 /* AIStrategy.m */,
-				60A760941648196F00086257 /* AStar.h */,
-				60A760951648196F00086257 /* AStar.m */,
 				60A760971648198500086257 /* AIBreadthFirstSearch.h */,
 				60A760981648198500086257 /* AIBreadthFirstSearch.m */,
 				60A7609A1648199000086257 /* AIDepthLimitedSearch.h */,
@@ -125,10 +158,10 @@
 				60A760A4164819BE00086257 /* AIGraphSearchQueue.m */,
 				60A760A6164819C600086257 /* AIGreedy.h */,
 				60A760A7164819C600086257 /* AIGreedy.m */,
-				60A760911648196200086257 /* AINode.h */,
-				60A760921648196200086257 /* AINode.m */,
 				60A760AC164819F400086257 /* AIIterativeDeepingSearch.h */,
 				60A760AD164819F400086257 /* AIIterativeDeepingSearch.m */,
+				60A760911648196200086257 /* AINode.h */,
+				60A760921648196200086257 /* AINode.m */,
 				60A760AF16481A5300086257 /* AIQueueDepthFirstSearch.h */,
 				60A760B016481A5300086257 /* AIQueueDepthFirstSearch.m */,
 				60A760B216481A6700086257 /* AIR2.h */,
@@ -137,6 +170,14 @@
 				60A760B616481A7400086257 /* AIRecursiveDepthFirstSearch.m */,
 				60A760BB164824E300086257 /* AISearchQueue.h */,
 				60A760BC164824E300086257 /* AISearchQueue.m */,
+				60A7608D1648195600086257 /* AIStrategy.h */,
+				60A7608E1648195600086257 /* AIStrategy.m */,
+				60CD80D1165BF56000D197C2 /* AITreeSearchQueue.h */,
+				60CD80D2165BF56000D197C2 /* AITreeSearchQueue.m */,
+				60CD80CE165BF54F00D197C2 /* AIUniformCost.h */,
+				60CD80CF165BF55000D197C2 /* AIUniformCost.m */,
+				60A760941648196F00086257 /* AStar.h */,
+				60A760951648196F00086257 /* AStar.m */,
 			);
 			name = Strategies;
 			sourceTree = "<group>";
@@ -145,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				609BADBD164020AC00229E96 /* aima-objc */,
+				60CD80DF165BFA8F00D197C2 /* AITests */,
 				609BADBA164020AC00229E96 /* Frameworks */,
 				609BADB9164020AC00229E96 /* Products */,
 			);
@@ -154,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				609BADB8164020AC00229E96 /* libaima-objc.a */,
+				60CD80D9165BFA8F00D197C2 /* AITests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				609BADBB164020AC00229E96 /* Foundation.framework */,
+				60CD80DA165BFA8F00D197C2 /* SenTestingKit.framework */,
+				60CD80DC165BFA8F00D197C2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,6 +226,44 @@
 			isa = PBXGroup;
 			children = (
 				609BADBF164020AC00229E96 /* aima-objc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60CD80C5165BF46700D197C2 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				605ECB7516581A83006538E9 /* JAPriorityQueue.h */,
+				605ECB7616581A83006538E9 /* JAPriorityQueue.m */,
+				603A53F11646CC0A00F71B58 /* Stack.h */,
+				603A53F21646CC0A00F71B58 /* Stack.m */,
+			);
+			name = "Data Structures";
+			sourceTree = "<group>";
+		};
+		60CD80C7165BF47300D197C2 /* Measurement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Measurement;
+			sourceTree = "<group>";
+		};
+		60CD80DF165BFA8F00D197C2 /* AITests */ = {
+			isa = PBXGroup;
+			children = (
+				60CD80E5165BFA8F00D197C2 /* AITests.h */,
+				60CD80E6165BFA8F00D197C2 /* AITests.m */,
+				60CD80E0165BFA8F00D197C2 /* Supporting Files */,
+			);
+			path = AITests;
+			sourceTree = "<group>";
+		};
+		60CD80E0165BFA8F00D197C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60CD80E1165BFA8F00D197C2 /* AITests-Info.plist */,
+				60CD80E2165BFA8F00D197C2 /* InfoPlist.strings */,
+				60CD80E8165BFA8F00D197C2 /* AITests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,6 +303,25 @@
 			productReference = 609BADB8164020AC00229E96 /* libaima-objc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		60CD80D8165BFA8F00D197C2 /* AITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60CD80E9165BFA8F00D197C2 /* Build configuration list for PBXNativeTarget "AITests" */;
+			buildPhases = (
+				60CD80D4165BFA8F00D197C2 /* Sources */,
+				60CD80D5165BFA8F00D197C2 /* Frameworks */,
+				60CD80D6165BFA8F00D197C2 /* Resources */,
+				60CD80D7165BFA8F00D197C2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60CD80ED165BFADE00D197C2 /* PBXTargetDependency */,
+			);
+			name = AITests;
+			productName = AITests;
+			productReference = 60CD80D9165BFA8F00D197C2 /* AITests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,9 +344,37 @@
 			projectRoot = "";
 			targets = (
 				609BADB7164020AC00229E96 /* aima-objc */,
+				60CD80D8165BFA8F00D197C2 /* AITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60CD80D6165BFA8F00D197C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CD80E4165BFA8F00D197C2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60CD80D7165BFA8F00D197C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		609BADB4164020AC00229E96 /* Sources */ = {
@@ -270,10 +400,39 @@
 				60A760B716481A7400086257 /* AIRecursiveDepthFirstSearch.m in Sources */,
 				60A760BD164824E300086257 /* AISearchQueue.m in Sources */,
 				605ECB7716581A83006538E9 /* JAPriorityQueue.m in Sources */,
+				60CD80D0165BF55000D197C2 /* AIUniformCost.m in Sources */,
+				60CD80D3165BF56100D197C2 /* AITreeSearchQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60CD80D4165BFA8F00D197C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CD80E7165BFA8F00D197C2 /* AITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60CD80ED165BFADE00D197C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609BADB7164020AC00229E96 /* aima-objc */;
+			targetProxy = 60CD80EC165BFADE00D197C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60CD80E2165BFA8F00D197C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60CD80E3165BFA8F00D197C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		609BADC4164020AC00229E96 /* Debug */ = {
@@ -299,7 +458,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.0;
 			};
 			name = Debug;
 		};
@@ -318,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -347,6 +506,40 @@
 			};
 			name = Release;
 		};
+		60CD80EA165BFA8F00D197C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libaima-objc.a";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AITests/AITests-Prefix.pch";
+				INFOPLIST_FILE = "AITests/AITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		60CD80EB165BFA8F00D197C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libaima-objc.a";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AITests/AITests-Prefix.pch";
+				INFOPLIST_FILE = "AITests/AITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +560,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		60CD80E9165BFA8F00D197C2 /* Build configuration list for PBXNativeTarget "AITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60CD80EA165BFA8F00D197C2 /* Debug */,
+				60CD80EB165BFA8F00D197C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

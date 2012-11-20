@@ -1,21 +1,21 @@
 //
-//  AIGreedy.m
+//  AIUniformCost.m
 //  aima-objc
 //
-//  Created by Bryn Bodayle on 11/5/12.
+//  Created by Bryn Bodayle on 11/20/12.
 //  Copyright (c) 2012 Bryn Bodayle. All rights reserved.
 //
 
-#import "AIGreedy.h"
+#import "AIUniformCost.h"
 #import "JAPriorityQueue.h"
 
-@interface AIGreedy()
+@interface AIUniformCost()
 
 @property (nonatomic, strong) AISearchQueue *searchQueue;
 
 @end
 
-@implementation AIGreedy
+@implementation AIUniformCost
 
 
 -(id)initWithSearchQueue:(AISearchQueue *)searchQueue {
@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         
-        //Log.record("Strategy: Greedy Search");
+        NSLog(@"Strategy: Uniform Cost Search");
         _searchQueue = searchQueue;
         
     }
@@ -32,8 +32,8 @@
 
 -(Stack *)search:(AISearchProblem *)problem {
     
-    return [_searchQueue search:problem fringe:[JAPriorityQueue queueWithComparator:[AINode compareH]]];
-    
+    return [_searchQueue search:problem fringe:[JAPriorityQueue queueWithComparator:[AINode compareG]]];
 }
+
 
 @end

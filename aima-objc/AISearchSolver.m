@@ -44,8 +44,7 @@
     while (solution.count > 0) {
         
         AINode *node = [solution pop];
-//        if(!Node.reporting.isEmpty())
-//             NSLog(@"%@", node);
+        NSLog(@"%@", node.description);
     }
     
     NSLog(@"Search succeeded");

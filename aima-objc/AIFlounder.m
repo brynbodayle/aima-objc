@@ -39,7 +39,7 @@
     }
     
     
-    return drift.getPathFromRoot;
+    return drift.pathFromRoot;
 }
 
 @end

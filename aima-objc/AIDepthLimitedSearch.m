@@ -35,7 +35,7 @@
     
     if([problem isGoal:root.state]){
         
-        return root.getPathFromRoot;
+        return root.pathFromRoot;
     }
     
     if(depth >= _bound)

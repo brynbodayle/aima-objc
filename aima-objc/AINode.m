@@ -58,7 +58,7 @@
     return self.parent == NULL;
 }
 
--(Stack *)getPathFromRoot {
+-(Stack *)pathFromRoot {
     
     AINode *current = self;
     
@@ -97,42 +97,42 @@
 }
 
 
-/*
+-(NSString *)toString {
+    
+   
+    NSString *report = @"";
+    
+     /*
+    
+    if (reporting.contains(Reports.address))
+        report += super.toString() + "\n";
+    if (reporting.contains(Reports.parent) && parent != null)
+        report += "Parent: " + parent + "\n";
+    if (reporting.contains(Reports.action) && action != null)
+        report += "Action: " + action + "\n";
+    if (reporting.contains(Reports.state))
+        report += "State: " + state + "\n";
+    if (reporting.contains(Reports.pretty))
+        report += "State: " + state.prettyPrint() + "\n";
+    if (reporting.contains(Reports.depth))
+        report += "Depth: " + depth + "\n";
+    if (reporting.contains(Reports.stepcost))
+        report += "Step Cost: " + stepCost + "\n";
+    if (reporting.contains(Reports.pathcost))
+        report += "Path Cost: " + pathCost + "\n";
+    if (reporting.contains(Reports.f))
+        report += "f() = " + getF() + "\n";
+    if (reporting.contains(Reports.g))
+        report += "g() = " + getG() + "\n";
+    if (reporting.contains(Reports.h))
+        report += "h() = " + getH() + "\n";
+    
+     */
+     
+    return report;
 
-
-public void setStepCost(double s) {
-    stepCost = s;
 }
 
-
-public double getStepCost() {
-    return stepCost;
-}
-
-public void addToPathCost(double s) {
-    pathCost = parent.getPathCost() + s;
-}
-
-public double getPathCost() {
-    return pathCost;
-}
-
-
-public double getF() {
-    return getG() + getH();
-}
-
-public double getG() {
-    return pathCost;
-}
-
-
-public double getH()
-{
-    return problem.heuristic(state);
-}
-
-*/
 /*
  
      public String toString()
@@ -165,6 +165,24 @@ public double getH()
      }
  */
 
+-(void)addToPathCost:(double)cost {
+    
+    _pathCost = _parent.pathCost + cost;
+}
+
+-(double)f {
+    
+    return self.g + self.h;
+}
+
+-(double)g {
+    
+    return _pathCost;
+}
+-(double)h {
+    
+    return [self.problem heuristic:_state];
+}
 
 #pragma -comparators
 

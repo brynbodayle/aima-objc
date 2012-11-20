@@ -1,16 +1,14 @@
 //
-//  AISearchQueue.h
+//  AITreeSearchQueue.h
 //  aima-objc
 //
-//  Created by Bryn Bodayle on 11/5/12.
+//  Created by Bryn Bodayle on 11/20/12.
 //  Copyright (c) 2012 Bryn Bodayle. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface AISearchQueue : NSObject
-
--(Stack*)search:(AISearchProblem*)problem fringe:(id)fringe;
+@interface AITreeSearchQueue : AISearchQueue
 
 -(void)addExpandedNodesToFringe:(NSMutableArray *)fringe current:(AINode *)current problem:(AISearchProblem *)problem;
 

@@ -32,9 +32,8 @@ typedef enum Reports {
           problem:(AISearchProblem *)problem
          andState:(AISearchState *)state;
 
-+(NSSet *)reporting;
 -(BOOL)isRootNode;
--(Stack *)getPathFromRoot;
+-(Stack *)pathFromRoot;
 -(void)addToPathCost:(double)cost;
 -(NSArray *)expand;
 
@@ -50,6 +49,7 @@ typedef enum Reports {
 
 @property (nonatomic, readonly) double g;
 @property (nonatomic, readonly) double h;
+@property (nonatomic, readonly) double f;
 @property (nonatomic, readonly) AISearchState *state;
 @property (nonatomic, readonly) NSInteger depth;
 @property (nonatomic, readonly) AINode *parent;

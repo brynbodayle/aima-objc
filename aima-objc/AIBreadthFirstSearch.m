@@ -41,7 +41,7 @@
 -(Stack *)search:(AISearchProblem *)problem {
     
     //might need to switch to a linked list later
-    return [_searchQueue search:problem collection:[NSArray array]];
+    return [_searchQueue search:problem fringe:[NSArray array]];
 }
 
 @end

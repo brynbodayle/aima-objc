@@ -33,7 +33,7 @@
 -(Stack *)search:(AISearchProblem *)problem root:(AINode *)root {
     
     if([problem isGoal:root.state])
-        return root.getPathFromRoot;
+        return root.pathFromRoot;
     
     
     for(AINode *node in [root expand]) {

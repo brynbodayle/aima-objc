@@ -30,7 +30,7 @@
     self = [super init];
     if (self) {
         
-        //Log.record("Strategy: A* Search");
+        NSLog(@"Strategy: A* Search");
         _searchQueue = searchQueue;
         
     }

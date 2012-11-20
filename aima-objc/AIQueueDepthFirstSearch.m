@@ -36,7 +36,7 @@
 
 -(Stack *)search:(AISearchProblem *)problem {
     
-    return [_searchQueue search:problem collection:[Stack stack]];
+    return [_searchQueue search:problem fringe:[Stack stack]];
 }
 
 @end

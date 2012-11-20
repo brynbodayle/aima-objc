@@ -39,7 +39,7 @@
         return nil;
     
     if([problem isGoal:root.state])
-        return root.getPathFromRoot;
+        return root.pathFromRoot;
     
     for(AINode *node in [root expand]) {
         
