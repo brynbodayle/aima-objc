@@ -11,4 +11,13 @@
     #import "AIStrategy.h"
     #import "AINode.h"
     #import "AISearchQueue.h"
+    #import "AIFlounder.h"
+    #import "AIDepthLimitedSearch.h"
+    #import "AIBreadthFirstSearch.h"
+    #import "AIGraphSearchQueue.h"
+    #import "AIGreedy.h"
+    #import "AIIterativeDeepingSearch.h"
+    #import "AIQueueDepthFirstSearch.h"
+    #import "AIR2.h"
+    #import "AIUniformCost.h"
 #endif

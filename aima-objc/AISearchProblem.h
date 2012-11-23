@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Map.h"
 
 @interface AISearchProblem : NSObject
 
@@ -14,9 +15,7 @@
 
 -(BOOL)isGoal:(AISearchState *)state;
 
-//a dictionary is what java calls a map, there is no type checking for
-//dictionary keys and values
--(NSDictionary *)succesors:(AISearchState *)state;
+-(Map *)succesors:(AISearchState *)state;
 
 -(double)heuristic:(AISearchState *)state;
 

@@ -77,12 +77,14 @@
     AISearchState *current = self.state;
     
     NSMutableArray *nodes = [NSMutableArray array];
-    NSMutableDictionary *sucessors = [[self.problem succesors:current] mutableCopy];
-    NSSet *actions = [NSSet setWithArray:sucessors.allKeys];
+    Map *sucessors = [[self.problem succesors:current] mutableCopy];
+    
+    NSSet *actions = [NSSet setWithArray:sucessors.keys];
+    
     
     for(AISearchAction *action in actions) {
         
-        AISearchState *sucessor = sucessors[action];
+        AISearchState *sucessor = [sucessors valueForKey:action];
         
         AINode *node = [[AINode alloc] initWithParentNode:self searchAction:action problem:self.problem andState:sucessor];
         node.action = action;
@@ -97,10 +99,10 @@
 }
 
 
--(NSString *)toString {
+-(NSString *)description {
     
    
-    NSString *report = @"";
+    NSString *report = self.state.formattedDescription;
     
      /*
     

@@ -10,6 +10,8 @@
 
 @interface AISearchQueue : NSObject
 
++(id)queue;
+
 -(Stack*)search:(AISearchProblem*)problem fringe:(id)fringe;
 
 -(void)addExpandedNodesToFringe:(NSMutableArray *)fringe current:(AINode *)current problem:(AISearchProblem *)problem;

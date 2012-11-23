@@ -36,7 +36,7 @@ typedef enum Reports {
 -(Stack *)pathFromRoot;
 -(void)addToPathCost:(double)cost;
 -(NSArray *)expand;
-
+-(NSString *)description;
 
 //comparators
 

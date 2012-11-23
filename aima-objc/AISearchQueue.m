@@ -7,8 +7,14 @@
 //
 
 #import "AISearchQueue.h"
+#import "JAPriorityQueue.h"
 
 @implementation AISearchQueue
+
+
++(id)queue {
+    return [[self alloc] init];
+}
 
 -(Stack *)search:(AISearchProblem *)problem fringe:(id)fringe {
     
@@ -26,6 +32,12 @@
         Stack *fringeStack = fringe;
         [fringeStack push:newNode];
     }
+    else if([fringe isKindOfClass:[JAPriorityQueue class]]) {
+        
+        JAPriorityQueue *priorityQueue = fringe;
+        [priorityQueue addObject:newNode];
+    }
+
     
     while([fringe count] != 0) {
         

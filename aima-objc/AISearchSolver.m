@@ -47,7 +47,7 @@
         NSLog(@"%@", node.description);
     }
     
-    NSLog(@"Search succeeded");
+    //NSLog(@"Search succeeded");
     return true;
 }
 

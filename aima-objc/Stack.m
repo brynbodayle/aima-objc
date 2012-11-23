@@ -16,7 +16,7 @@
 
 @implementation Stack
 
--(id)stack {
++(id)stack {
     return [[Stack alloc] init];
 }
 
@@ -32,7 +32,12 @@
 }
 
 - (id)pop {
-    return [_contents lastObject];
+    
+    id obj = [_contents lastObject];
+    
+    [_contents removeObject:obj];
+    
+    return obj;
 }
 
 - (NSInteger)count {

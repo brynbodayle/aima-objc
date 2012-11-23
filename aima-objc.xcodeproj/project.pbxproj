@@ -11,6 +11,7 @@
 		603A53EC1646C64200F71B58 /* AISearchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53EB1646C64200F71B58 /* AISearchAction.m */; };
 		603A53EF1646C80900F71B58 /* AISearchSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53EE1646C80900F71B58 /* AISearchSolver.m */; };
 		603A53F31646CC0A00F71B58 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 603A53F21646CC0A00F71B58 /* Stack.m */; };
+		604CC173165ECBB400464AA5 /* Jump.m in Sources */ = {isa = PBXBuildFile; fileRef = 604CC172165ECBB400464AA5 /* Jump.m */; };
 		605ECB7716581A83006538E9 /* JAPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 605ECB7616581A83006538E9 /* JAPriorityQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		609BADBC164020AC00229E96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BADBB164020AC00229E96 /* Foundation.framework */; };
 		60A7608F1648195600086257 /* AIStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A7608E1648195600086257 /* AIStrategy.m */; };
@@ -33,6 +34,9 @@
 		60CD80DE165BFA8F00D197C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609BADBB164020AC00229E96 /* Foundation.framework */; };
 		60CD80E4165BFA8F00D197C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60CD80E2165BFA8F00D197C2 /* InfoPlist.strings */; };
 		60CD80E7165BFA8F00D197C2 /* AITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80E6165BFA8F00D197C2 /* AITests.m */; };
+		60CD80F1165BFD7100D197C2 /* PegsProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80F0165BFD7100D197C2 /* PegsProblem.m */; };
+		60CD80F4165BFDB400D197C2 /* PegBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80F3165BFDB400D197C2 /* PegBoard.m */; };
+		60CD80F7165C0DB900D197C2 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD80F6165C0DB900D197C2 /* Map.m */; };
 		60F9A4391642EB770017C963 /* AISearchState.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F9A4381642EB770017C963 /* AISearchState.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,8 @@
 		603A53EE1646C80900F71B58 /* AISearchSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchSolver.m; sourceTree = "<group>"; };
 		603A53F11646CC0A00F71B58 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		603A53F21646CC0A00F71B58 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		604CC171165ECBB400464AA5 /* Jump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jump.h; sourceTree = "<group>"; };
+		604CC172165ECBB400464AA5 /* Jump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jump.m; sourceTree = "<group>"; };
 		605ECB7516581A83006538E9 /* JAPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAPriorityQueue.h; sourceTree = "<group>"; };
 		605ECB7616581A83006538E9 /* JAPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAPriorityQueue.m; sourceTree = "<group>"; };
 		609BADB8164020AC00229E96 /* libaima-objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libaima-objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +116,12 @@
 		60CD80E5165BFA8F00D197C2 /* AITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITests.h; sourceTree = "<group>"; };
 		60CD80E6165BFA8F00D197C2 /* AITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITests.m; sourceTree = "<group>"; };
 		60CD80E8165BFA8F00D197C2 /* AITests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AITests-Prefix.pch"; sourceTree = "<group>"; };
+		60CD80EF165BFD7100D197C2 /* PegsProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PegsProblem.h; sourceTree = "<group>"; };
+		60CD80F0165BFD7100D197C2 /* PegsProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PegsProblem.m; sourceTree = "<group>"; };
+		60CD80F2165BFDB400D197C2 /* PegBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PegBoard.h; sourceTree = "<group>"; };
+		60CD80F3165BFDB400D197C2 /* PegBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PegBoard.m; sourceTree = "<group>"; };
+		60CD80F5165C0DB900D197C2 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		60CD80F6165C0DB900D197C2 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
 		60F9A4371642EB770017C963 /* AISearchState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISearchState.h; sourceTree = "<group>"; };
 		60F9A4381642EB770017C963 /* AISearchState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISearchState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +249,8 @@
 				605ECB7616581A83006538E9 /* JAPriorityQueue.m */,
 				603A53F11646CC0A00F71B58 /* Stack.h */,
 				603A53F21646CC0A00F71B58 /* Stack.m */,
+				60CD80F5165C0DB900D197C2 /* Map.h */,
+				60CD80F6165C0DB900D197C2 /* Map.m */,
 			);
 			name = "Data Structures";
 			sourceTree = "<group>";
@@ -253,6 +267,7 @@
 			children = (
 				60CD80E5165BFA8F00D197C2 /* AITests.h */,
 				60CD80E6165BFA8F00D197C2 /* AITests.m */,
+				60CD80EE165BFD4D00D197C2 /* Pegs */,
 				60CD80E0165BFA8F00D197C2 /* Supporting Files */,
 			);
 			path = AITests;
@@ -266,6 +281,19 @@
 				60CD80E8165BFA8F00D197C2 /* AITests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60CD80EE165BFD4D00D197C2 /* Pegs */ = {
+			isa = PBXGroup;
+			children = (
+				60CD80EF165BFD7100D197C2 /* PegsProblem.h */,
+				60CD80F0165BFD7100D197C2 /* PegsProblem.m */,
+				60CD80F2165BFDB400D197C2 /* PegBoard.h */,
+				60CD80F3165BFDB400D197C2 /* PegBoard.m */,
+				604CC171165ECBB400464AA5 /* Jump.h */,
+				604CC172165ECBB400464AA5 /* Jump.m */,
+			);
+			name = Pegs;
 			sourceTree = "<group>";
 		};
 		60F9A43B1642EB800017C963 /* Search */ = {
@@ -402,6 +430,7 @@
 				605ECB7716581A83006538E9 /* JAPriorityQueue.m in Sources */,
 				60CD80D0165BF55000D197C2 /* AIUniformCost.m in Sources */,
 				60CD80D3165BF56100D197C2 /* AITreeSearchQueue.m in Sources */,
+				60CD80F7165C0DB900D197C2 /* Map.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +439,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60CD80E7165BFA8F00D197C2 /* AITests.m in Sources */,
+				60CD80F1165BFD7100D197C2 /* PegsProblem.m in Sources */,
+				60CD80F4165BFDB400D197C2 /* PegBoard.m in Sources */,
+				604CC173165ECBB400464AA5 /* Jump.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +600,7 @@
 				60CD80EB165BFA8F00D197C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

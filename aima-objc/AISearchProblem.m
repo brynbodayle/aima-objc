@@ -28,7 +28,7 @@
 }
 
 
--(NSDictionary *)succesors:(AISearchState *)state {
+-(Map *)succesors:(AISearchState *)state {
     
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
